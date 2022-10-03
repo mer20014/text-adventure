@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class GameLogic {
 
+	//Will determine ending
 	static Scanner scanner = new Scanner(System.in);
 	public static boolean isRunning;
 	public static boolean researchTown;
@@ -13,6 +14,7 @@ public class GameLogic {
 	public static boolean knife;
 	public static boolean grimoire;
 
+	//Get user input
     public static int readInt(String prompt, int userChoice) {
         int input;
 
@@ -33,6 +35,7 @@ public class GameLogic {
         
     }
     
+    //allows for players to control when chunks of text are displayed
     public static void pressContinue() {
     		System.out.println("\nPress anything to continue to continue...");
     		scanner.next();
@@ -115,6 +118,7 @@ public class GameLogic {
 			
 			input = readInt(">>> ", 2);
 			
+			//No research - bad end
 			if (input == 1) {
 				System.out.println("You open the folder, revealing a few papers. One was a document, containing a\n"
 						+ "statement you have become familiar with over the years. Along with that are a few\n"
@@ -127,6 +131,7 @@ public class GameLogic {
 				
 				pressContinue();
 				
+				//TODO: Add Statement
 				System.out.println("***statement will go here***");
 				
 				pressContinue();
@@ -149,6 +154,7 @@ public class GameLogic {
 		    	
 		    	input = readInt(">>> ", 5);
 		    	
+		    	//Will loop until player decides to stop researching
 		    	while (input != 5) {
 					if (input == 1) {
 						researchTown = true;
@@ -236,6 +242,7 @@ public class GameLogic {
 		    			+ "differen types of rounds that tends to be loud, and a grimoire, which you haven't used before and know\n"
 		    			+ "little about.");
 		    	
+		    	//weapon will change ending - gun will lead to bad ending
 		    	System.out.println("What do you use?");
 		    	System.out.println("1. Knife");
 		    	System.out.println("2. Gun");
