@@ -8,7 +8,7 @@ investigating it, you do some research and decide the best course of action to t
 I used the first two videos in a youtube tutorial to start the structure of my game. From there, I created everything else myself.
 I also used a lot of tutorials on Java, the most helpful of which will also be linked below.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/22l3T1Pd_2E)
 
 # Development Environment
 
