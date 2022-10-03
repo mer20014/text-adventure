@@ -347,7 +347,7 @@ public class GameLogic {
 						System.out.println("3. Check Notebook");
 						
 						input = readInt(">>>", 3);
-						while (input != 1) {
+//						while (input != 1) {
 							//Talk to them - one ending
 							if (input == 2) {
 									System.out.println("You explain why you're here, and talk to them about what they want.\n"
@@ -392,7 +392,7 @@ public class GameLogic {
 								}
 							}
 							
-						}
+//						}
 						
 						
 					} else if (input == 3) {
@@ -436,7 +436,7 @@ public class GameLogic {
 								System.out.println("3. Check Notebook");
 								
 								input = readInt(">>>", 3);
-								while (input != 1) {
+//								while (input != 1) {
 									//Talk to them - one ending
 									if (input == 2) {
 											System.out.println("You explain why you're here, and talk to them about what they want.\n"
@@ -479,9 +479,10 @@ public class GameLogic {
 											
 											System.out.println("Ending 6 - Christmas in July");
 										}
-									}
+//									}
 									
-								}
+										isRunning = false;
+								} 
 								
 							} else if (input == 3) {
 								Notebook.viewNotes(notes);
@@ -497,6 +498,8 @@ public class GameLogic {
 								
 								System.out.println("Game Over");
 								System.out.println("Ending 2 - It's not polite to eavesdrop");
+								
+								isRunning = false;
 							}
 						}
 						
